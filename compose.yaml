@@ -26,6 +26,9 @@ services:
       - MONGO_INITDB_ROOT_PASSWORD=secret
     networks:
        - profile-network
+    volumes:
+       - "C:/Users/conor/OneDrive - South East Technological University (Waterford Campus)/Documents/Software Systems Development/Year 4/Agile Software Practice/Docker_Introduction/Multi_Container/simple-profile-app/data:/data/db"
+
 
   mongo-express:
     container_name: express
